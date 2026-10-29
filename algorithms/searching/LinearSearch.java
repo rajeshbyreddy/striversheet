@@ -13,9 +13,11 @@ public class LinearSearch {
         for (int i : arr) {
             if(i == target){
                 System.out.println("element found at index "+index);
+                return ;
             }
             index++;
         }
+        System.out.println("element not found...");
     }
     public static void main(String[] args) {
         int arr[] = {2,3,4,5,6};
